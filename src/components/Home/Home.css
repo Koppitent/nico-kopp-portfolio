@@ -1,0 +1,82 @@
+.hexagon-container {
+  position: relative;
+  width: 250px;
+  height: 288px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hexagon-wrapper {
+  position: relative;
+  width: 220px;
+  height: 254px;
+}
+
+.hexagon-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: linear-gradient(135deg, #00d4ff, #00fff2);
+  padding: 3px;
+  filter: drop-shadow(0 0 20px rgba(0, 255, 242, 0.6)) 
+          drop-shadow(0 0 40px rgba(0, 212, 255, 0.4));
+}
+
+.hexagon-image {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  overflow: hidden;
+  background: #1a1a2e;
+}
+
+.hexagon-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Tablet and larger phones */
+@media (min-width: 640px) {
+  .hexagon-container {
+    width: 300px;
+    height: 346px;
+  }
+
+  .hexagon-wrapper {
+    width: 260px;
+    height: 300px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) {
+  .hexagon-container {
+    width: 350px;
+    height: 404px;
+  }
+
+  .hexagon-wrapper {
+    width: 310px;
+    height: 358px;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+  .hexagon-container {
+    width: 400px;
+    height: 460px;
+  }
+
+  .hexagon-wrapper {
+    width: 350px;
+    height: 404px;
+  }
+}
