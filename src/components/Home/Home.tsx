@@ -5,7 +5,7 @@ import { Mail } from "lucide-react";
 export function Home() {
   return (
     <>
-      <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-32 lg:gap-55 px-4 md:px-8 py-8 md:py-12">
+      <div className="flex min-h-[90vh] flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-32 lg:gap-55 px-4 md:px-8 py-8 md:py-12">
         <div className="w-full md:w-96 text-center md:text-right">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-indigo-400 font-mono">
             Hi, Ich bin Nico Kopp!
